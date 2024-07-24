@@ -1,0 +1,9 @@
+# Example data: list of items sold
+items_sold = ['apple', 'banana', 'cherry', 'apple', 'banana', 'apple']
+
+# Counting items using a dictionary
+item_count = defaultdict(int)
+for item in items_sold:
+    item_count[item] += 1
+
+print("Item counts:", dict(item_count))
